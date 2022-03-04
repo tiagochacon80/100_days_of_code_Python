@@ -1,13 +1,14 @@
-import random
+from random import randint
 
-names_string = input("Give me everybody's names, separated by a coma. \n")
+names = input("Give me everybody's names, separated by a coma.\n")
+names_separated = names.split(', ')
 
-names = names_string.split(", ")
+compriment = len(names_separated)
 
-numbers_names = len(names)#len() nous donne le compriment/quantité des noms dans notre liste name[]
+random_choice = randint(0, compriment - 1)
 
-number_chosen = random.randint(0, numbers_names-1)#Après trouvé la quantité avec len() nous allons diminuer de -1 pour trouver le dernier élément de la liste
+friend_chosen = names_separated[random_choice]
 
-chosen = names[number_chosen]
+print((f"Who will pay de the bill? {friend_chosen}"))
 
-print(chosen)
+
