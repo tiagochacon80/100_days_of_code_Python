@@ -14,17 +14,6 @@ nb_numbers = int(input("How many numbers would like in your password?\n "))
 
 numbers_symbols = int(input("How many symbols would like in your password?\n"))
 
-'''password = ""
-for c in range(1, number_letters + 1):
-    password += random.choice(letters)
-
-for c in range(1, nb_numbers + 1):
-    password += random.choice(numbers)
-
-for c in range(1, numbers_symbols + 1):
-    password += random.choice(symbols)
-print(password)'''
-
 password_list = []
 
 for c in range(1, number_letters + 1):
@@ -42,5 +31,5 @@ password = ""
 for c in password_list:
     password += c
 
-print(f"Your password is: {password}")
+print(f"\033[93mYour password is: {password}")
 
