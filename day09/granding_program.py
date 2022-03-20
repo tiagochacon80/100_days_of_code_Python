@@ -6,17 +6,17 @@ student_scores = {
   "Neville": 62,
 }
 
-student_grades = {}
+student_grade = {}
 
 for student in student_scores:
   score = student_scores[student]
   if score > 90:
-    student_grades[student] = "Outstanding"
-  elif score > 80:
-    student_grades[student] = "Exceeds Expectations"
-  elif score > 70:
-    student_grades[student] = "Acceptable"
+    student_grade[student] = "Outstanding"
+  if score > 80:
+    student_grade[student] = "Exceeds Expectations"
+  if score > 70:
+    student_grade[student] = "Acceptable"
   else:
-    student_grades[student] = "Fail"
+    student_grade[student] = "Fail"
 
-print(student_grades)
+print(student_grade)
