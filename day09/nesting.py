@@ -26,6 +26,6 @@ travel_log_third = [
     {
         "country": "Germany",
         "cities_visited": ["Berlin", "Hamburg", "Stuttgart"],
-        "total_vidited": 10
+        "total_visited": 10
     }
 ]
