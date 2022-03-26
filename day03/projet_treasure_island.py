@@ -1,20 +1,21 @@
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
-road = input('You\'re at a cross road. Where do you want to go? Type "left" or "right" \n').lower()
+road = input("You're at a cross road. Where do you to go? Type 'right' or 'left'\n").lower()
 if road == "left":
     lake = input('You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat or type "swim" to swim accros. \n').lower()
     if lake == "wait":
-        door = input("You arrive at the island. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? \n").lower()
-        if door == "yellow":
-            print("You Win!")
-        elif door == "red":
-            print("Burned by fire. Game Over.")
-        elif door == "blue":
-            print("Eaten by beasts. Game Over.")
+        island = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?\n").lower()
+        if island == "red":
+            print("It's a room full of fire. Game Over")
+        elif island == "blue":
+            print("You enter a room of beasts. Game Over.")
+        elif island == "yellow":
+            print("You found the treasure! You Win!")
         else:
-            print("Your chose a door that doesn't exist. Game Over.")
+            print("You chose a door that doesn't exist. Game Over.")
     else:
-        print("Attacked by an angry trout. Game Over.")
+        print("You get attacked by an angry trout. Game Over.")
 else:
-    print("Fall into a hole")
+    print("You fell into a hole. Game Over.")
+
