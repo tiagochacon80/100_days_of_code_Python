@@ -1,7 +1,7 @@
-print("Welcome to the band name generator")
+print("Welcome to the Band Name Generator.")
 
-city = input("Which city did you grow up in?\n ")#\n skip a line and the cursor goes to the bottom line
+street = input("What's name of the city you grew up in?\n")
 
-pet = input("What is the name of a pet?\n ")
+pet = input("What's your pet's name?\n")
 
-print("Your band name could be" + city + " " + pet)
+print(f"Your brand name could {street} {pet}")
