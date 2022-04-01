@@ -1,7 +1,7 @@
 from art import logo, vs
 from game_data import data
 import random
-from replit import clear
+#from replit import clear
 
 def format_data(account):
     """Takes the account data and return the printable format."""
@@ -47,7 +47,7 @@ while game_should_continue:
     is_correct = check_answer(guess, a_follower_count, b_follower_count)
 
     # Clear the screen between rounds.
-    clear()
+    #clear()
     print(logo)
 
     #Giver user feedback on their guess.
